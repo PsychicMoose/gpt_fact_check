@@ -33,8 +33,8 @@ Demo:
 
 #### 1. Install dependencies:
 
-```bash
 pip install flask openai python-dotenv flask-cors
 
+#### 2. set up api key
 create a .env file with your API key
 OPENAI_API_KEY=sk-...
