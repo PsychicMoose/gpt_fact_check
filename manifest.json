@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "GPT Fact Checker",
+    "version": "1.0",
+    "description": "Right-click text and check if it's true using GPT.",
+    "permissions": ["contextMenus", "scripting", "activeTab", "storage", "notifications"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    
+    "icons": {
+        "128": "icon.png"
+    },
+
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
